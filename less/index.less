@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,19 +13,18 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -48,12 +47,174 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+/* Set every element's box-sizing to border-box and add google font*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+	font-family: 'ZCOOL XiaoWei', serif;
 }
 
 html, body {
     height: 100%;
+		margin: 0;
 }
 
+/* start of challenge */
+
+
+
+/* variables */
+@main-color: @guardsman-red;
+@guardsman-red: #ED3141;
+@left-background: @Emperor;
+@Emperor: #4F4F4F;
+@underline-color: @Silver;
+@Silver: #BFBFBF;
+
+// .full-page{
+// 	margin: 2px;
+// 	background: white;
+// }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content-column-left {
+  display: flex;
+  flex-direction: column;
+	flex-basis: 100%;
+  flex: 2;
+	background: @left-background;
+}
+
+.content-column-right {
+  display: flex;
+  flex-direction: column;
+	flex-basis: 100%;
+  flex: 3;
+}
+
+.content-column-left, .content-column-right{
+height: 450px;
+}
+
+.nav, .name-and-title, {
+	text-align: center;
+}
+
+.nav{
+	margin-top: 10px;
+}
+
+.name-and-title h1{
+	margin-bottom: 5px;
+}
+
+.introduction-column, .personal-column, .contact-column, .skills-column{
+	margin: 50px;
+}
+
+.work-history-column{
+	margin: 0 50px 50px;
+}
+
+.skills-column table{
+	margin: 0 auto;
+}
+
+.personal-table, .contact-table{
+	color: white;
+}
+
+.personal-table td, .contact-table td{
+	font-size: 2.5rem;
+}
+
+.personal-table td:first-child, .contact-table td:first-child{
+	padding-right: 80px;
+	padding-top: 5px;
+}
+
+.name-and-title{
+	margin: 0 auto;
+}
+
+img{
+  border-radius: 50%;
+  height: 16rem;
+  width: 16rem;
+  border: 10px solid @main-color;
+	margin: 20px 0 5px;
+}
+
+h1{
+	font-size: 4rem;
+	color: @main-color;
+}
+
+h2{
+	font-size: 3.5rem;
+	color: white;
+	margin-bottom: 10px;
+	border-bottom: 2px solid @underline-color;
+}
+
+h2 span{
+	background: @main-color;
+}
+
+h3{
+	font-size: 2rem;
+	color: white;
+}
+
+h4{
+	color:  @main-color;
+	font-size: 3.5rem;
+}
+
+h5{
+	font-size: 1.5rem;
+	color: black;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+h6{
+	font-size: 1rem;
+	color: black;
+	margin: 10px 0;
+	opacity: 0.5;
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 0 5px;
+}
+
+p{
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.introduction-column p {
+	font-size: 1.75rem;
+	line-height: 1.5;
+}
+
+.skills-column td{
+	font-size: 4rem;
+	text-align: center;
+	font-weight: bold;
+	padding: 40px;
+}
+
+// @media (max-width: 1500px){
+// 	p{
+// 		font-size: 2rem;
+// 	}
+// }

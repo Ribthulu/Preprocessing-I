@@ -1,1 +1,260 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box and add google font*/
+* {
+  box-sizing: border-box;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+/* start of challenge */
+/* variables */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.content-column-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  background: #4F4F4F;
+}
+.content-column-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 3;
+}
+.content-column-left,
+.content-column-right {
+  height: 450px;
+}
+.nav,
+.name-and-title {
+  text-align: center;
+}
+.nav {
+  margin-top: 10px;
+}
+.name-and-title h1 {
+  margin-bottom: 5px;
+}
+.introduction-column,
+.personal-column,
+.contact-column,
+.skills-column {
+  margin: 50px;
+}
+.work-history-column {
+  margin: 0 50px 50px;
+}
+.skills-column table {
+  margin: 0 auto;
+}
+.personal-table,
+.contact-table {
+  color: white;
+}
+.personal-table td,
+.contact-table td {
+  font-size: 2.5rem;
+}
+.personal-table td:first-child,
+.contact-table td:first-child {
+  padding-right: 80px;
+  padding-top: 5px;
+}
+.name-and-title {
+  margin: 0 auto;
+}
+img {
+  border-radius: 50%;
+  height: 16rem;
+  width: 16rem;
+  border: 10px solid #ED3141;
+  margin: 20px 0 5px;
+}
+h1 {
+  font-size: 4rem;
+  color: #ED3141;
+}
+h2 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #BFBFBF;
+}
+h2 span {
+  background: #ED3141;
+}
+h3 {
+  font-size: 2rem;
+  color: white;
+}
+h4 {
+  color: #ED3141;
+  font-size: 3.5rem;
+}
+h5 {
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 10px;
+  font-weight: bold;
+}
+h6 {
+  font-size: 1rem;
+  color: black;
+  margin: 10px 0;
+  opacity: 0.5;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0 5px;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.introduction-column p {
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+.skills-column td {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 40px;
+}
