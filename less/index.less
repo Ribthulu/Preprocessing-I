@@ -74,9 +74,9 @@ html, body {
   display: flex;
 }
 
- *{
-    box-shadow: inset 0 0 16px -4px blue;
-  }
+ // *{
+ //    box-shadow: inset 0 0 16px -4px blue;
+ //  }
   .columnL {
     width: 35%;
 		background-color: @left-background;
@@ -90,23 +90,6 @@ html, body {
 	padding: 50px;
 }
 
-
-
-
-
-@media only screen and (max-width: 800px) {
-  *{
-    box-shadow: inset 0 0 16px -4px green;
-  }
-  .row{
-    flex-wrap:wrap;
-  }
-  .columnL, .columnR {
-    width: 100%;
-    flex: 1 0 100%;
-  }
-}
-
 .nav, .name-and-title, {
 	text-align: center;
 }
@@ -117,6 +100,25 @@ html, body {
 
 .name-and-title h1{
 	margin-top: 20px;
+}
+
+.personal, .skills{
+	padding-top: 100px;
+}
+
+.skills table{
+	width: 100%;
+}
+
+.skills table td{
+	margin: 0 auto;
+	color: black;
+	font-size: 4rem;
+	font-weight: 600;
+	padding: 75px 25px;
+	line-height: 1;
+	text-align: center;
+	vertical-align: center;
 }
 
 img{
@@ -136,16 +138,22 @@ h1{
 	color: @main-color;
 }
 
-h2{
+h2 span{
 	font-size: 3.5rem;
 	color: white;
-	margin-bottom: 10px;
-	border-bottom: 2px solid @underline-color;
+	background: @main-color;
+	padding: 20px;
+	display: inline-block;
 }
 
-h2 span{
-	background: @main-color;
+.style-border{
+	border-top: 2px solid @underline-color;
 }
+
+.style-border-last{
+	padding-top: 50px;
+}
+
 
 h3{
 	font-size: 2rem;
@@ -160,8 +168,11 @@ h4{
 h5{
 	font-size: 1.5rem;
 	color: black;
-	margin-top: 10px;
 	font-weight: bold;
+}
+
+h5:last-of-type{
+	padding-top: 50px;
 }
 
 h6{
@@ -186,7 +197,6 @@ p{
 td{
 	font-size: 2rem;
 	line-height: 2;
-	text-align: justify;
 	color: white;
 }
 
@@ -194,6 +204,7 @@ td:first-child{
 	padding-right: 100px;
 }
 
+// mobile only styling
 @media only screen and (max-width: 800px){
   *{
     box-shadow: inset 0 0 16px -4px green;
