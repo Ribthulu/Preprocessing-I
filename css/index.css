@@ -145,9 +145,17 @@ body {
 }
 .columnL {
   width: 35%;
+  background-color: #4F4F4F;
 }
 .columnR {
   width: 65%;
+}
+.introduction,
+.personal,
+.skills,
+.contact,
+.work-history {
+  padding: 50px;
 }
 @media only screen and (max-width: 800px) {
   * {
@@ -167,17 +175,26 @@ body {
   text-align: center;
 }
 .nav {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .name-and-title h1 {
-  margin-bottom: 5px;
+  margin-top: 20px;
 }
 img {
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 200px;
+  width: 200px;
   border: 10px solid #ED3141;
   margin: 20px 0 5px;
+}
+h1,
+h2,
+h2 span,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -216,12 +233,21 @@ a {
   color: white;
   text-decoration: none;
   font-size: 2rem;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   text-align: justify;
+}
+td {
+  font-size: 2rem;
+  line-height: 2;
+  text-align: justify;
+  color: white;
+}
+td:first-child {
+  padding-right: 100px;
 }
 @media only screen and (max-width: 800px) {
   * {
