@@ -1,1 +1,568 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box and add google font*/
+* {
+  box-sizing: border-box;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+/* start of challenge */
+/* variables */
+.row {
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}
+.columnL {
+  width: 35%;
+  background-color: #4F4F4F;
+}
+.columnR {
+  width: 65%;
+}
+@media (max-width: 1000px) {
+  .columnL,
+  .columnR {
+    width: 100%;
+    flex: 1 0 100%;
+  }
+}
+.introduction,
+.personal,
+.skills,
+.contact,
+.work-history {
+  padding: 50px;
+}
+@media (max-width: 1800px) {
+  .introduction,
+  .personal,
+  .skills,
+  .contact,
+  .work-history {
+    padding: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .introduction,
+  .personal,
+  .skills,
+  .contact,
+  .work-history {
+    padding: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .introduction,
+  .personal,
+  .skills,
+  .contact,
+  .work-history {
+    padding: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .introduction,
+  .personal,
+  .skills,
+  .contact,
+  .work-history {
+    padding: 25px;
+  }
+}
+.nav,
+.name-and-title {
+  text-align: center;
+}
+.nav {
+  margin-top: 20px;
+}
+.name-and-title h1 {
+  margin-top: 20px;
+}
+.personal,
+.skills {
+  padding-top: 100px;
+}
+@media (max-width: 1800px) {
+  .personal,
+  .skills {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .personal,
+  .skills {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .personal,
+  .skills {
+    padding: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .personal,
+  .skills {
+    padding: 25px;
+  }
+}
+.skills table {
+  width: 100%;
+}
+.skills table td {
+  margin: 0 auto;
+  color: black;
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 75px 25px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: center;
+}
+@media (max-width: 1800px) {
+  .skills table td {
+    font-size: 2.25rem;
+    padding: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .skills table td {
+    font-size: 1.75rem;
+    padding: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .skills table td {
+    font-size: 2rem;
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .skills table td {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #ED3141;
+  margin: 20px 0 5px;
+}
+h1,
+h2,
+h2 span,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  color: #ED3141;
+}
+@media (max-width: 1800px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+}
+h2 span {
+  font-size: 3.5rem;
+  color: white;
+  background: #ED3141;
+  padding: 20px;
+  display: inline-block;
+}
+@media (max-width: 1800px) {
+  h2 span {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  h2 span {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 1000px) {
+  h2 span {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 span {
+    font-size: 2.6rem;
+  }
+}
+.style-border {
+  border-top: 2px solid #BFBFBF;
+}
+@media (max-width: 1200px) {
+  .style-border-skills {
+    display: none;
+    border-top: 2px solid #BFBFBF;
+  }
+}
+.hidden-style-border {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .hidden-style-border {
+    display: table;
+    border-top: 2px solid #BFBFBF;
+  }
+}
+.style-border-last {
+  padding-top: 50px;
+}
+@media (max-width: 1800px) {
+  .style-border-last {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .style-border-last {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .style-border-last {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .style-border-last {
+    padding-top: 20px;
+  }
+}
+h3 {
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 1800px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1000px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+h4 {
+  color: #ED3141;
+  font-size: 3.5rem;
+}
+@media (max-width: 1800px) {
+  h4 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  h4 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 1000px) {
+  h4 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 2.6rem;
+  }
+}
+h5 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 1800px) {
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1200px) {
+  h5 {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 1000px) {
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  h5 {
+    font-size: 1.15rem;
+  }
+}
+h5:last-of-type {
+  padding-top: 50px;
+}
+h6 {
+  font-size: 1rem;
+  color: black;
+  margin: 10px 0;
+  opacity: 0.5;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0 10px;
+}
+@media (max-width: 1800px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  a {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1000px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.25rem;
+  }
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+@media (max-width: 1800px) {
+  p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1200px) {
+  p {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 1000px) {
+  p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.15rem;
+  }
+}
+td {
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+}
+@media (max-width: 1800px) {
+  td {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1200px) {
+  td {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 1000px) {
+  td {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  td {
+    font-size: 1.15rem;
+  }
+}
+td:first-child {
+  padding-right: 100px;
+}
+@media (max-width: 1800px) {
+  td:first-child {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  td:first-child {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  td:first-child {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 500px) {
+  td:first-child {
+    padding-right: 20px;
+  }
+}
